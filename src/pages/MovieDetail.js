@@ -26,7 +26,7 @@ useEffect(() => {
     .then(response => setMovie(response))
     .catch(err => console.error(err));
 
-}, []);
+}, [params.id]);
 
 useTitle(movie.title);
 
